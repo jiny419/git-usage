@@ -117,6 +117,17 @@ $ git reset --hard HEAD // 마지막 커밋 상태로 되돌림
 $ git reset HEAD * // 스테이징을 언스테이징으로 변경, ref
 ```
 
+커밋 후 업로드 된 파일 untrack 
+```
+# 단일파일
+git rm --cached [filename]
+
+# gitignore에 있는 모든 파일 추적 취소
+git rm --cached -r .
+git add .
+git commit -m "untrack files in .gitignore
+
+```
 
 ## Branch
 
